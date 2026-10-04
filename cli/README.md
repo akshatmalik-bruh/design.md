@@ -1,12 +1,12 @@
-# 🎨 create-design-md
+# design.md (create-design-md)
 
-> **Created by Akshat Malik**
+NPM Package: https://www.npmjs.com/package/create-design-md
 
-`create-design-md` is a CLI tool that injects standardized AI design system rulebooks directly into any web project directory (`.agents/`).
+`create-design-md` is a CLI tool that injects standardized AI design system rulebooks directly into any web project directory (`./.agents/`).
 
 ---
 
-## 🚀 Quick Usage
+## Quick Usage
 
 Run anywhere in your terminal:
 
@@ -28,21 +28,21 @@ npx create-design-md --neobrutalism
 
 ---
 
-## 🎨 Available Design Skill Bundles
+## Available Design Skill Bundles
 
-### 1. ✨ Minimalism Design Skills
+### 1. Minimalism
 - **Best Used For**: Clean SaaS dashboards, developer tools, tech portfolios, and documentation sites.
 - **Rules Included**: Hairline surfaces, 4px grid spacing, accessibility floor, typography tokens, reversible motion.
 
-### 2. ⚡ Neobrutalism Design Skills
+### 2. Neobrutalism
 - **Best Used For**: Bold landing pages, Web3 apps, indie hacker products, and vibrant retro brands.
 - **Rules Included**: Flat high-contrast palette, 2px black outlines, 4px hard offset shadows, physical press mechanics.
 
 ---
 
-## 📁 What gets installed in your project?
+## The Four Core Pillars (.agents Structure)
 
-Running `npx create-design-md` creates a `.agents/` folder in your project root containing:
+Running `npx create-design-md` creates a `./.agents/` folder in your project root containing:
 - `design.md`: Color tokens, themes, and design primitives.
 - `components.md`: UI component definitions and layout patterns.
 - `structure.md`: Responsive hierarchy and layout composition rules.
@@ -50,5 +50,4 @@ Running `npx create-design-md` creates a `.agents/` folder in your project root 
 
 ---
 
-## 📄 License
-MIT © Akshat Malik
+Created by Akshat Malik

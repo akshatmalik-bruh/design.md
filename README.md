@@ -1,16 +1,75 @@
-# React + Vite
+# design.md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A CLI package and design system injector that delivers production-grade design skill bundles for Minimalism and Neobrutalism directly into your project workspace.
 
-Currently, two official plugins are available:
+NPM Package: https://www.npmjs.com/package/create-design-md
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`design.md` allows developers and AI coding agents to instantly setup standardized design rulebooks inside any project using a clean `./.agents/` folder structure.
 
-## Expanding the ESLint configuration
+By running the CLI, the selected design bundle is automatically copied into `./.agents/`, giving your AI tools (Cursor, Antigravity, Claude, ChatGPT, Codex) complete architectural guidance for building UIs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Quick Start
+
+NPM Package Link: https://www.npmjs.com/package/create-design-md
+
+Run either command in your project terminal:
+
+```bash
+npx create-design-md
+```
+
+or
+
+```bash
+npm create design-md
+```
+
+### Direct Execution Flags
+
+```bash
+# Inject Minimalism:
+npx create-design-md --minimalism
+
+# Inject Neobrutalism:
+npx create-design-md --neobrutalism
+```
+
+---
+
+## Available Design Skill Bundles
+
+### 1. Minimalism
+- **Focus**: Sleek, high-elegance UIs with hairline borders, subtle elevation, 4px grid alignment, and typography tokens.
+- **Best Suited For**: Modern SaaS applications, developer tools, documentation sites, and technical portfolios.
+
+### 2. Neobrutalism
+- **Focus**: High-contrast, vibrant UIs featuring flat palettes, 2px solid black outlines, 4px hard offset shadows, and tactile press mechanics.
+- **Best Suited For**: Landing pages, Web3 applications, indie hacker products, and high-energy brand experiences.
+
+---
+
+## The Four Core Pillars (.agents Structure)
+
+Every injected design skill bundle establishes a standardized `./.agents/` directory containing four specialized focus files:
+
+1. **`design.md`**
+   - Core design primitives, color system tokens, surface levels, contrast ratios, and theme tokens.
+
+2. **`components.md`**
+   - Detailed specifications for atomic UI components including buttons, cards, form inputs, badges, and modals.
+
+3. **`structure.md`**
+   - Layout architecture, responsive breakpoint rules, grid alignment, and section composition guidelines.
+
+4. **`animation.md`**
+   - Motion principles, timing curves, micro-interactions, state transitions, and accessibility reduced-motion rules.
+
+---
+
+Created by Akshat Malik
