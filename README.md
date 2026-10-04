@@ -1,3 +1,5 @@
+<img width="1906" height="943" alt="image" src="https://github.com/user-attachments/assets/1f54baf7-ca52-4471-98cf-a8b0d9af1520" />
+
 # design.md
 
 A CLI package and design system injector that delivers production-grade design skill bundles for Minimalism and Neobrutalism directly into your project workspace.
