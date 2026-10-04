@@ -1,0 +1,33 @@
+{
+  "name": "create-design-md",
+  "version": "1.0.0",
+  "description": "CLI tool to inject Minimalism or Neobrutalism design skills into any project",
+  "type": "module",
+  "main": "bin/index.js",
+  "bin": {
+    "create-design-md": "./bin/index.js",
+    "design-md": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "README.md"
+  ],
+  "keywords": [
+    "cli",
+    "design-system",
+    "design-md",
+    "minimalism",
+    "neobrutalism",
+    "agents",
+    "skills"
+  ],
+  "author": "Akshat Malik",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "figlet": "^1.8.0"
+  }
+}

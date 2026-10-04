@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  /* color: neutral ramp */
+  --bg: #ffffff;
+  --surface-1: #fafafa;
+  --surface-2: #f5f5f5;
+  --fg1: #0a0a0a;          /* primary text */
+  --fg2: #525252;          /* secondary text */
+  --fg3: #737373;          /* tertiary text, placeholders */
+  --border-subtle: #e5e5e5; /* structure: dividers, cards, tables */
+  --border-default: #d4d4d4;
+  --border-strong: #8a8a8a; /* control boundaries: inputs, buttons */
+  --focus: #0a0a0a;
+  --accent: #0a0a0a;        /* monotone by default */
+  --accent-foreground: #ffffff;
+  --success: #15803d;
+  --warning: #a16207;
+  --danger: #b91c1c;
+  --info: #1d4ed8;
+
+  /* shape */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* elevation */
+  --shadow-float: 0 4px 12px rgb(0 0 0 / 0.08);   /* level 1 */
+  --shadow-modal: 0 12px 32px rgb(0 0 0 / 0.16);  /* level 2 */
+
+  /* Motion tokens from animation.md Section 4 */
+  --motion-fast: 180ms;
+  --motion-normal: 420ms;
+  --motion-slow: 700ms;
+  --motion-reveal: 900ms;
+
+  --motion-distance-sm: 16px;
+  --motion-distance-md: 32px;
+  --motion-distance-lg: 56px;
+
+  --navbar-height: 64px;
+}
+
+/* Optional dark theme: swap tokens only */
+[data-theme="dark"] {
+  --bg: #0a0a0a; 
+  --surface-1: #141414; 
+  --surface-2: #1c1c1c;
+  --fg1: #fafafa; 
+  --fg2: #a3a3a3; 
+  --fg3: #8a8a8a;
+  --border-subtle: #262626; 
+  --border-default: #333333; 
+  --border-strong: #6b6b6b;
+  --focus: #fafafa; 
+  --accent: #fafafa; 
+  --accent-foreground: #0a0a0a;
+  --success: #4ade80; 
+  --warning: #facc15; 
+  --danger: #f87171; 
+  --info: #60a5fa;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-fg1: var(--fg1);
+  --color-fg2: var(--fg2);
+  --color-fg3: var(--fg3);
+  --color-line-subtle: var(--border-subtle);
+  --color-line: var(--border-default);
+  --color-line-strong: var(--border-strong);
+  --color-focus: var(--focus);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+
+  --radius-sm: 2px; 
+  --radius-md: 4px; 
+  --radius-lg: 8px;
+  --shadow-float: 0 4px 12px rgb(0 0 0 / 0.08);
+  --shadow-modal: 0 12px 32px rgb(0 0 0 / 0.16);
+  --ease-standard: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--fg1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-weight: 500; }
+  p { max-width: 65ch; }
+  a { text-underline-offset: 4px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+  /* Account for fixed navbar height in scroll navigation */
+  section[id] {
+    scroll-margin-top: var(--navbar-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
