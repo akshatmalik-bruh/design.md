@@ -72,10 +72,6 @@ function App() {
           gsap.timeline({ scrollTrigger: { trigger: '.skill-story', start: 'top top', end: '+=180%', pin: '.story-pin', scrub: 0.7 } })
             .to('.story-minimal', { opacity: 0, y: -48, duration: 0.42, ease: 'none' }, 0.2)
             .fromTo('.story-brutal', { opacity: 0, y: 64, clipPath: 'inset(0 0 100% 0)' }, { opacity: 1, y: 0, clipPath: 'inset(0 0 0% 0)', duration: 0.42, ease: 'none' }, 0.48)
-        } else {
-          gsap.timeline({ scrollTrigger: { trigger: '.skill-story', start: 'top top', end: '+=110%', pin: '.story-pin', scrub: 0.5 } })
-            .to('.story-minimal', { opacity: 0, y: -36, duration: 0.4, ease: 'none' }, 0.2)
-            .fromTo('.story-brutal', { opacity: 0, y: 48 }, { opacity: 1, y: 0, duration: 0.4, ease: 'none' }, 0.48)
         }
         gsap.from('.footer-inner', { yPercent: 25, ease: 'none', scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'top top', scrub: true } })
       }

@@ -279,13 +279,13 @@
 .prompt-box { color: #0a0a0a; }
 
 @media (max-width: 760px) {
-  .story-pin { height: max(100svh, 620px); min-height: 620px; overflow: hidden; padding-top: 0; }
-  .story-index { top: 25px; }
-  .story-act { position: absolute; inset: 0; min-height: 0; padding: 92px var(--gutter) 72px; }
+  .story-pin { height: auto; min-height: 0; overflow: visible; padding: 26px 0 0; }
+  .story-index { position: relative; top: auto; left: auto; right: auto; margin: 0 var(--gutter) 24px; }
+  .story-act { position: relative; inset: auto; display: flow-root; width: 100%; height: auto; min-height: 0; margin: 0; padding: 36px var(--gutter) 42px; overflow: visible; opacity: 1 !important; clip-path: none !important; transform: none !important; }
   .story-act h2 { font-size: clamp(3.8rem, 15vw, 6.5rem); }
   .story-brutal h2 { font-size: clamp(4rem, 15vw, 6.5rem); }
   .story-description { max-width: 45ch; }
-  .story-stamp { bottom: 32px; font-size: 16px; }
+  .story-stamp { position: static; display: table; margin: 28px 0 0 auto; font-size: 16px; }
   .story-progress { display: none; }
   .bundle-section { padding-top: 82px; padding-bottom: 82px; }
   .install-paths { grid-template-columns: 1fr; gap: 18px; }
@@ -312,4 +312,20 @@
   .install-switch { width: 100%; }
   .install-switch button { flex: 1; }
   .install-path-foot > span:last-child { margin-left: auto; }
+}
+
+@media (max-width: 760px) {
+  .story-act { position: relative; inset: auto; display: flow-root; height: auto; min-height: 0; margin: 0; }
+  .story-stamp { position: static; display: table; margin: 28px 0 0 auto; }
+}
+
+/* The experiment section uses natural document flow on phones and small tablets. */
+@media (max-width: 760px) {
+  .designs { min-height: 0; overflow: visible; }
+  .designs-inner { min-height: 0; }
+  .comparison { position: static; inset: auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 30px; width: 100%; margin: 34px 0 24px; }
+  .comparison > div { min-width: 0; }
+  .comparison-title { position: static; margin: 0 0 12px; opacity: 1 !important; transform: none !important; }
+  .preview-canvas { width: 100%; height: clamp(300px, 70vw, 360px); }
+  .proof-note { position: static; inset: auto; margin: 20px 0 0; }
 }
