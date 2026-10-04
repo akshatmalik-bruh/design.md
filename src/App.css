@@ -25,11 +25,11 @@
 .intro-copy { display: flex; align-items: start; gap: 8vw; max-width: 960px; margin: 24px 0 38px; color: var(--mint); }
 .intro-copy p { max-width: 55ch; font-size: 14px; line-height: 1.65; }
 .intro-copy .intro-lede { color: var(--paper); font-size: clamp(1.2rem, 2vw, 1.65rem); line-height: 1.3; max-width: 27ch; }
-.comparison { position: absolute; top: clamp(125px, 17vh, 190px); left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 64px); margin: 0 auto; }
+.comparison { position: absolute; top: clamp(65px, 8vh, 95px); left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 64px); margin: 0 auto; }
 .comparison-title { margin: 0 0 12px; font-size: clamp(1.4rem, 2.2vw, 2rem); letter-spacing: -.04em; font-weight: 500; }
 .comparison-title sup { font: 10px var(--mono); color: var(--mint); vertical-align: top; margin-left: 5px; }
 .proof-note { position: absolute; bottom: 10px; left: 0; right: 0; display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; color: var(--mint); }
-.preview-canvas { height: clamp(300px, 33vw, 420px); position: relative; overflow: hidden; }
+.preview-canvas { height: clamp(290px, 30vw, 390px); position: relative; overflow: hidden; }
 .preview-minimal { background: #f0eee7; color: #252820; border: 1px solid rgba(244,245,208,.55); }
 .canvas-minimal-nav, .canvas-neo-nav { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; font: 9px var(--mono); letter-spacing: .06em; }
 .canvas-minimal-nav { border-bottom: 1px solid #d7d5cd; }
@@ -98,7 +98,7 @@
 .markdown-view h3 { font: 500 21px/1.2 var(--mono); margin: 0 0 16px; scroll-margin-top: 24px; }
 .markdown-view h3:not(:first-child) { margin-top: 34px; }
 .markdown-view p { margin: 0 0 10px; }
-.footer { min-height: var(--vh-full, 100vh); position: relative; z-index: 2; background: var(--paper); padding: clamp(220px, 25vw, 340px) var(--gutter) 34px; }
+.footer { min-height: var(--vh-full, 100vh); position: relative; z-index: 2; background: var(--paper); padding: clamp(320px, 35vh, 460px) var(--gutter) 48px; }
 .footer::before { content: ''; position: absolute; left: -10%; right: -10%; top: -10vw; height: 20vw; min-height: 100px; background: inherit; border-radius: 50% 50% 0 0 / 100% 100% 0 0; z-index: -1; }
 .footer-inner { position: relative; z-index: 1; max-width: 1600px; margin: auto; }
 .footer-top { display: flex; justify-content: space-between; gap: 32px; }
@@ -109,7 +109,7 @@
 .footer-credit img { display: block; width: 16px; height: 16px; }
 .footer-top nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 40px; align-content: start; font: 11px var(--mono); }
 .footer-top nav a { text-decoration: none; padding: 10px 0; }
-.footer-line { margin: clamp(95px, 15vw, 210px) 0 48px; font-size: clamp(3rem, 11vw, 11rem); line-height: .85; letter-spacing: -.09em; font-weight: 600; }
+.footer-line { margin: clamp(60px, 10vh, 120px) 0 48px; font-size: clamp(3rem, 11vw, 11rem); line-height: .85; letter-spacing: -.09em; font-weight: 600; }
 .footer-bottom { display: flex; justify-content: space-between; padding-top: 14px; border-top: 1px solid rgba(55,64,70,.4); font-size: 9px; }
 .footer-bottom a { text-decoration: none; }
 @supports (height: 100svh) { .hero, .footer { --vh-full: 100svh; } }
@@ -171,23 +171,23 @@
 .skill-story { background: #fff; color: #0a0a0a; }
 .story-pin { position: relative; height: var(--vh-full, 100vh); min-height: 620px; overflow: hidden; background: #fff; }
 .story-index { position: absolute; z-index: 4; top: 30px; left: var(--gutter); right: var(--gutter); color: #525252; }
-.story-act { position: absolute; inset: 0; padding: clamp(130px, 16vh, 180px) var(--gutter) 80px; overflow: hidden; }
+.story-act { position: absolute; inset: 0; padding: clamp(75px, 9vh, 105px) var(--gutter) 60px; overflow: hidden; }
 .story-minimal { z-index: 1; background: #fff; color: #0a0a0a; }
 .story-brutal { z-index: 2; opacity: 0; background: hsl(217 100% 66%); color: #000; }
 .story-file, .bundle-number, .story-rules, .story-progress, .story-stamp { font: 10px/1.5 var(--mono); letter-spacing: .1em; }
-.story-file { margin: 0 0 clamp(18px, 4vh, 42px); }
-.story-act h2 { margin: 0; font-size: clamp(5rem, 16vw, 15rem); line-height: .78; letter-spacing: -.105em; font-weight: 600; }
+.story-file { margin: 0 0 clamp(10px, 1.8vh, 20px); }
+.story-act h2 { margin: 0; font-size: clamp(3.8rem, 9.5vw, 8.5rem); line-height: .82; letter-spacing: -.105em; font-weight: 600; }
 .story-act h2 span { color: #737373; }
-.story-brutal h2 { font-size: clamp(5rem, 15vw, 14rem); font-weight: 800; letter-spacing: -.095em; }
+.story-brutal h2 { font-size: clamp(3.8rem, 9.5vw, 8.5rem); font-weight: 800; letter-spacing: -.095em; }
 .story-brutal h2 span { color: #facc00; }
-.story-deck { margin: 28px 0 12px; font-size: clamp(1.3rem, 2.5vw, 2.5rem); letter-spacing: -.05em; }
+.story-deck { margin: 16px 0 10px; font-size: clamp(1.1rem, 2vw, 2rem); letter-spacing: -.05em; }
 .story-brutal .story-deck { display: table; padding: 8px 12px; border: 2px solid #000; background: #facc00; font-weight: 800; box-shadow: 4px 4px 0 #000; }
-.story-description { max-width: 62ch; font-size: clamp(14px, 1.25vw, 18px); line-height: 1.65; color: #525252; }
+.story-description { max-width: 62ch; font-size: clamp(13px, 1.1vw, 16px); line-height: 1.6; color: #525252; }
 .story-brutal .story-description { max-width: 56ch; color: #000; font-weight: 600; }
-.story-rules { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.story-rules { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .story-rules span { padding: 7px 10px; border: 1px solid #d4d4d4; }
 .story-brutal .story-rules span { border: 2px solid #000; background: #fff; font-weight: 500; box-shadow: 3px 3px 0 #000; }
-.story-stamp { position: absolute; right: var(--gutter); bottom: 70px; text-align: right; line-height: 1.2; font-size: clamp(15px, 2vw, 24px); font-weight: 500; }
+.story-stamp { position: absolute; right: var(--gutter); bottom: 70px; text-align: right; line-height: 1.2; font-size: clamp(14px, 1.8vw, 22px); font-weight: 500; }
 .story-brutal .story-stamp { padding: 12px; border: 2px solid #000; background: #facc00; box-shadow: 5px 5px 0 #000; font-weight: 800; transform: rotate(4deg); }
 .story-progress { position: absolute; z-index: 4; right: var(--gutter); bottom: 28px; left: var(--gutter); display: flex; align-items: center; gap: 16px; font-size: 9px; }
 .story-progress i { height: 1px; flex: 1; background: currentColor; }

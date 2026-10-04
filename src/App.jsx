@@ -108,7 +108,7 @@ function App() {
           <div className="hero-image"><img ref={heroImage} src={galaxy} alt="Halftone galaxy over alien mountains"/><div className="grain"/></div>
 
           <div className="hero-copy"><h1 className="hero-title">{copy.hero.title}</h1><nav className="hero-links" aria-label="Project links"><a href="https://github.com/akshatmalik-bruh/design.md" target="_blank" rel="noreferrer" aria-label="Design Skills on GitHub"><img src={githubLogo} alt="" /></a><a href="https://www.npmjs.com/package/create-design-md" target="_blank" rel="noreferrer" aria-label="create-design-md on npm"><img src={npmLogo} alt="" /></a></nav></div>
-          <p className="hero-coordinate">DESIGN SYSTEMS / 2025</p><a className="scroll-link" href="#designs">{copy.hero.control}</a>
+          <p className="hero-coordinate">VERSION 1</p><a className="scroll-link" href="#designs">{copy.hero.control}</a>
         </section>
 
         <section id="designs" className="designs" aria-labelledby="designs-heading">
@@ -134,7 +134,6 @@ function App() {
             </article>
             <article className="story-act story-brutal">
               <p className="story-file">NEOBRUTALISM / .AGENTS / DESIGN.MD</p><h2>NEO<br/>BRUTALISM<span>!</span></h2><p className="story-deck">Make the structure impossible to miss.</p>
-              <p className="story-description">Flat saturated color. Black two-pixel outlines. A hard four-pixel shadow. Controls physically press into the page; scroll can pin, stack, overlap and send whole panels across the frame.</p>
               <div className="story-rules"><span>2PX BLACK</span><span>4PX SHADOW</span><span>PRESS / RELEASE</span><span>LAYERS IN MOTION</span></div><span className="story-stamp">BUILT TO<br/>BE FELT</span>
             </article>
             <div className="story-progress"><span>01 / RESTRAINT</span><i/><span>02 / IMPACT</span></div>
